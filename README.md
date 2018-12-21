@@ -29,11 +29,13 @@ Open Charles Proxy and go to **Proxy** in the top bar where **File**, **Edit**, 
 You will get a popup which says something like IP Range. Click add and type  `0.0.0.0/0` and click add again and type `::/0` then click underneath `::/0` then press Done. Now open Access Control again just to make sure it added both the entries. If it did press `Ok` again.
 
 Next go to **Proxy** in the top bar and press `SSL Proxying Settings`. You'll get a popup which will say something like `Location`.
+Press `add` and for `Host` type `*` and for `Port` type `*`.
 Press `add` and for `Host` type `api.movieboxpro.app` and for `Port` type `443`.
 Press `add` again the for `Host` type `api.movieboxpro.app` and for `Port` type `*`.
 
 It should look like this
 ```
+*:*
 api.movieboxpro.app:443
 api.movieboxpro.app:*
 ```
@@ -47,7 +49,16 @@ Next you want to setup your local server.
 You can Google how to setup WAMP, LAMP, XAMPP or MAMP etc.
 Once you've set one of them up go to the htdocs folder and just copy the `MovieBoxPro++` folder into the htdocs folder.
 
-Now you want to go onto your iOS Device and go to Settings -> WiFi -> Your Wi-Fi Network and press the ( i ) -> HTTP Proxy -> Configure Proxy -> Manual -> Server = Your Computer's IP and Port = 8888 -> Save, then open MovieBoxPro and press the button on the right hand side of the navigation bar. You should now see `Ignition Tweaks`.
+Now you want to go onto your iOS Device and go to Settings -> WiFi -> Your Wi-Fi Network and press the ( i ) -> HTTP Proxy -> Configure Proxy -> Manual -> Server = Your Computer's IP and Port = 8888 -> Save
+Then open safari and go to chls.pro/ssl and install the profile, then go to Settings -> General -> About -> Certificate Trust Settings and enable the certificate you just added.
+
+Then open MovieBoxPro and press the button on the right hand side of the navigation bar. You should now see `Ignition Tweaks`. FYI you may need to login.
+
+Please note, you may experience things like other apps not working etc when using this method. 
+
+To fix this you can set the proxy as automatic under settings and set the url to 
+
+https://ignition.fun/vip.php?ip=your_computers_ip
 
 ## Authors
 
