@@ -53,6 +53,7 @@ Now you want to go onto your iOS Device and go to Settings -> WiFi -> Your Wi-Fi
 Then open safari and go to chls.pro/ssl and install the profile, then go to Settings -> General -> About -> Certificate Trust Settings and enable the certificate you just added.
 
 Then open MovieBoxPro and press the button on the right hand side of the navigation bar. You should now see `Ignition Tweaks`. FYI you may need to login.
+If you need to login, after logging in click My VIP and wait a few seconds then you'll get VIP.
 
 Please note, you may experience things like other apps not working etc when using this method. 
 
