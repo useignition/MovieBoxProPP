@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?charles serialisation-version='2.0' ?>
+<map>
+  <toolEnabled>true</toolEnabled>
+  <mappings>
+    <mapMapping>
+      <sourceLocation>
+        <protocol>https</protocol>
+        <host>api.movieboxpro.app</host>
+        <port>*</port>
+        <path>/api/api_client/index</path>
+        <query>appid=*&amp;data=*</query>
+      </sourceLocation>
+      <destLocation>
+        <protocol>http</protocol>
+        <host>192.168.3.120</host>
+        <port>80</port>
+        <path>/MovieBoxPro++/headers.php</path>
+      </destLocation>
+      <preserveHostHeader>true</preserveHostHeader>
+      <enabled>true</enabled>
+    </mapMapping>
+  </mappings>
+</map>
